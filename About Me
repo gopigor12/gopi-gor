@@ -3,4 +3,7 @@
 I'm currently doing my MS in Cybersecurity at Fordham University, NY. 
 
 The different repositories have some of my originally written scripts, 
-and the readme files have a description and explanation of the code that I have created for different kinds of automation use cases. 
+and the files have a description with the brief explanation of the code that I have created for different kinds of automation use cases. 
+
+You can find bash, sql, and python scripts in the different folders, for red team and blue team. 
+Corresponding reports for each code can be find in the folders too. 
