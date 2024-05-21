@@ -11,3 +11,13 @@ _sourceCategory=Labs/Okta
 country 
 | where _time >= now() - 1h    
 | where country != "United States"    
+
+/*In the above query, we have used the Okta log source which we used in the user security monitoring lab. 
+Now we are looking for IP addresses and the country from which the IP address has been logging in. For this, 
+we parse the IP address and country from which the requests have come in. The parse command allows us 
+to parse the 2 fields from the raw log source. The next line of the query, the time window, in this case has 
+been set to the past hour, and thus where clause looks for all requests made within the past hour and parses 
+the IP and countries. The last line of the query is more like a filter where it looks for the country which does 
+not match United states. This would show suspicious logins outside the United States and the IP address 
+would be visible as well. This is a very simple query to quickly detect outside IP addresses in the organization 
+if their operations run only in a specific country. */
